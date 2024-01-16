@@ -81,8 +81,8 @@ function App() {
   <>
     <div className='App'>
       {/* About section */}
-      <section id="about">
-        <img src="profile.jpg" alt="Logan Krieger" />
+      <section className='about'>
+        <img className='avatar' src="src/images/Avatar.jpeg" alt="Logan Krieger" />
         <p>
           At the intersection of web development, data analysis, and business development lies my unique skillset – a trifecta that fuels my work and drives your success.
 
@@ -90,12 +90,12 @@ function App() {
 
           And with a background in Business Development , I understand the importance of growth and expansion for every organization. Utilizing my web development and data analysis skills, I provide services that lead to your business growth.
         </p>
+      </section>
         <div className="skills">
           {skills.map(skill => (
             <span key={skill.name}>{skill.icon}{skill.name}</span>  
           ))}
         </div>
-      </section>
 
       {/* Projects section */}
       <section id="projects">

@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
-  background-color: greenyellow;
+  
 }
 
 html,
@@ -26,39 +26,40 @@ body,
 
 .App {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 2rem;
   box-sizing: border-box;
 }
 
-.clientContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-}
+
 
 .skillIcons {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 5em;
+  margin: 1rem;
+  animation: spinner 15s linear infinite;
 }
 
-.skillIcons > * {
-  flex-basis: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
+.skills{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+
 }
 
 .skillName {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 1rem;
@@ -75,5 +76,28 @@ body,
 
   .skill {
     margin: 1rem 0;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-180deg) scale(0.5);
+    opacity: 0;
+  }
+  75% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
   }
 }
