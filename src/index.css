@@ -1,7 +1,27 @@
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'xygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  background-color: greenyellow;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+}
+
+:root {
+  --color-red: #ff0000;
+  --color-black: #000000;
+  --color-gold: #ffd700;
+  --color-white: #ffffff;
 }
 
 .App {
@@ -9,140 +29,51 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
   box-sizing: border-box;
 }
 
-section {
+.clientContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  max-width: 1600px;
-  margin: 20px auto;
-  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-section img {
-  width: 100%;
-  max-width: 300px;
-  margin-bottom: 20px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section p {
-  margin-bottom: 20px;
-}
-
-.skills {
+.skillIcons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px 0;
 }
 
-.skills span {
-  margin: 0 10px;
-  font-size: 1.2rem;
+.skillIcons > * {
+  flex-basis: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.project {
+.skillName {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  margin: 1rem;
 }
 
-.project h3 {
-  margin-bottom: 10px;
-}
-
-.project a {
-  margin: 10px 0;
-  font-size: 1.2rem;
-}
-
-input,
-textarea {
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: 20px;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1.2rem;
-}
-
-textarea {
-  height: 200px;
-}
-
-button {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #3e8e41;
-}
-
-footer {
-  margin-top: 40px;
-  text-align: center;
-}
-
-@media (max-width: 800px) {
-  section {
-    max-width: 100%;
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 1rem;
   }
 
-  .skills span {
-    font-size: 1rem;
+  .skills {
+    flex-direction: column;
   }
 
-  input,
-  textarea,
-  button {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  section img {
-    max-width: 200px;
-  }
-
-  .skills span {
-    font-size: 0.8rem;
-  }
-
-  input,
-  textarea,
-  button {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 400px) {
-  section img {
-    max-width: 150px;
-  }
-
-  .skills span {
-    font-size: 0.6rem;
-  }
-
-  input,
-  textarea,
-  button {
-    font-size: 0.8rem;
+  .skill {
+    margin: 1rem 0;
   }
 }

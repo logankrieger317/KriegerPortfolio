@@ -7,14 +7,14 @@ function App() {
 
   const [projects, setProjects] = useState([
     {
-      name: 'Project 1', 
+      name: <h4 className='skillName'> Project 1</h4>, 
       description: 'A description of project 1',
       image: 'project1.png',
       githubLink: 'https://github.com/...',
       demoLink: 'https://myproject1.com'
     },
     {
-      name: 'Project 2',
+      name: <h4 className='skillName'> Project 2 </h4>,
       description: 'A description of project 2',  
       image: 'project2.png',
       githubLink: 'https://github.com/...',
@@ -24,42 +24,42 @@ function App() {
 
   const skills = [
     {
-      name: 'HTML',
+      name: <h4 className='skillName'> HTML</h4>,
       icon: <img className='skillIcons' src="./src/icons/html5.png" alt="HTML5 icon" />,
     },
     {
-      name: 'CSS',
+      name: <h4 className='skillName'> CSS</h4>,
       icon: <img className='skillIcons' src="./src/icons/CSS.png" alt="CSS3 icon" />,
     },
     {
-      name: 'JavaScript',
+      name: <h4 className='skillName'> JavaScript</h4>,
       icon: <img className='skillIcons' src="./src/icons/js.png" alt="JavaScript icon" />,
     },
     {
-      name: 'React.js',
+      name: <h4 className='skillName'> React.js</h4>,
       icon: <img className='skillIcons' src="./src/icons/science.png" alt="React.js icon" />,
 
     },
     {
-      name: 'Node.js',
+      name: <h4 className='skillName'> Node.js</h4>,
       icon: <img className='skillIcons' src="./src/icons/nodejs.png" alt="Node.js icon" />,
     },
     {
-      name: 'Express.js',
+      name: <h4 className='skillName'> Express.js</h4>,
       icon: <img className='skillIcons' src="./src/icons/Express.png" alt="Express.js icon" />,
     },
     {
-      name: 'MongoDB',
+      name: <h4 className='skillName'> MongoDB</h4>,
       icon: <img className='skillIcons' src="./src/icons/Mongodb.png" alt="MongoDB icon" />,
     }, 
     { 
-      name: 'GitHub',
+      name: <h4 className='skillName'> GitHub</h4>,
       icon: <img className='skillIcons' src="./src/icons/github.png" alt="GitHub icon" />,
     }
   ]
 
   const [contactForm, setContactForm] = useState({
-    name: '',
+    name:  '',
     email: '',
     phone: '',
     message: ''
