@@ -1,10 +1,18 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+}
+
 .portfolio {
   font-family: Arial, sans-serif;
   color: #333;
 }
 
 .header {
-  background-color: #d40000;
+  background-color: black;
   color: #fff;
   padding: 20px;
 }
@@ -12,6 +20,19 @@
 .header h1 {
   margin: 0;
 }
+
+
+
+.skills{
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow:auto;
+  border: solid black 2px;
+  
+}
+
 
 .nav {
   background-color: #333;
@@ -96,5 +117,11 @@
 
   .piece {
     width: 100%;
+  }
+  .skills{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    border: solid black 2px ;
   }
 }
